@@ -3,6 +3,8 @@
   <component name="ContentModelUserStore">
     <attachedFolders />
     <explicitIncludes>
+      <Path>Library/PackageCache/com.unity.ads.ios-support@1.0.0</Path>
+      <Path>Library/PackageCache/com.unity.ads@4.1.0</Path>
       <Path>Library/PackageCache/com.unity.collab-proxy@1.15.18</Path>
       <Path>Library/PackageCache/com.unity.ext.nunit@1.0.6</Path>
       <Path>Library/PackageCache/com.unity.feature.development@1.0.1</Path>
@@ -43,6 +45,7 @@
       <Path>Library/PackageCache/com.unity.modules.wind@1.0.0</Path>
       <Path>Library/PackageCache/com.unity.modules.xr@1.0.0</Path>
       <Path>Library/PackageCache/com.unity.probuilder@5.0.4</Path>
+      <Path>Library/PackageCache/com.unity.purchasing@4.1.5</Path>
       <Path>Library/PackageCache/com.unity.test-framework@1.1.31</Path>
       <Path>Library/PackageCache/com.unity.textmeshpro@3.0.6</Path>
       <Path>Library/PackageCache/com.unity.timeline@1.7.1</Path>
@@ -52,10 +55,10 @@
       <Path>ProjectSettings</Path>
     </explicitIncludes>
     <explicitExcludes>
+      <Path>.git</Path>
       <Path>.idea</Path>
       <Path>Library</Path>
       <Path>Logs</Path>
-      <Path>Temp</Path>
       <Path>UserSettings</Path>
       <Path>obj</Path>
     </explicitExcludes>

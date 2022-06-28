@@ -13,7 +13,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/_Scripts/GameFlow.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1066">
+            <state relative-caret-position="1184">
               <caret line="77" column="117" selection-start-line="77" selection-start-column="117" selection-end-line="77" selection-end-column="117" />
               <folding>
                 <marker date="1656254229045" expanded="true" signature="6:107" ph="..." />
@@ -31,10 +31,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/_Scripts/EventHandler.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="784">
+            <state relative-caret-position="1360">
               <caret line="185" column="56" selection-start-line="185" selection-start-column="56" selection-end-line="185" selection-end-column="56" />
               <folding>
                 <marker date="1656257071146" expanded="true" signature="6:162" ph="..." />
@@ -76,6 +76,25 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/_Scripts/Ads/InterstitialAd.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+              <folding>
+                <marker date="1656440996110" expanded="true" signature="6:52" ph="..." />
+                <marker date="1656440996110" expanded="true" signature="144:2114" ph="{...}" />
+                <marker date="1656440996110" expanded="true" signature="321:523" ph="{...}" />
+                <marker date="1656440996110" expanded="true" signature="586:819" ph="{...}" />
+                <marker date="1656440996110" expanded="true" signature="893:1084" ph="{...}" />
+                <marker date="1656440996110" expanded="true" signature="1207:1297" ph="{...}" />
+                <marker date="1656440996110" expanded="true" signature="1396:1596" ph="{...}" />
+                <marker date="1656440996110" expanded="true" signature="1694:1887" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/_Scripts/Player.cs">
           <provider selected="true" editor-type-id="text-editor">
@@ -108,11 +127,16 @@
       </file>
     </leaf>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/GameFlow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/EventHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ads@4.1.0/Runtime/Advertisement/Platform/Editor/EditorPlatform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/CamMove.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Ads/InterstitialAd.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -121,6 +145,8 @@
         <option value="$PROJECT_DIR$/Assets/_Scripts/GameFlow.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/EventHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Ad_Handler.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Ads/InterstitialAd.cs" />
       </list>
     </option>
   </component>
@@ -130,26 +156,28 @@
     <option name="width" value="1835" />
     <option name="height" value="1017" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="UnityExplorer" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AssemblyExplorer" />
-      <pane id="UnityExplorer">
-        <option name="show-hidden-items" value="false" />
-        <option name="show-project-names" value="true" />
-      </pane>
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
       </pane>
       <pane id="FileSystemExplorer" />
+      <pane id="UnityExplorer">
+        <option name="show-hidden-items" value="false" />
+        <option name="show-project-names" value="true" />
+      </pane>
+      <pane id="AssemblyExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -195,11 +223,12 @@
       <workItem from="1655917598328" duration="13844000" />
       <workItem from="1656004883818" duration="730000" />
       <workItem from="1656249467813" duration="8202000" />
+      <workItem from="1656439765296" duration="1660000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22776000" />
+    <option name="totallyTimeSpent" value="24436000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -213,7 +242,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24147122" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24413647" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -275,7 +304,7 @@
     <entry file="file://$PROJECT_DIR$/Temp/Compiled-Standard.shader" />
     <entry file="file://$PROJECT_DIR$/Assets/_Scripts/GameFlow.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1066">
+        <state relative-caret-position="1184">
           <caret line="77" column="117" selection-start-line="77" selection-start-column="117" selection-end-line="77" selection-end-column="117" />
           <folding>
             <marker date="1656254229045" expanded="true" signature="6:107" ph="..." />
@@ -288,6 +317,18 @@
             <marker date="1656254229045" expanded="true" signature="2045:2106" ph="{...}" />
             <marker date="1656254229045" expanded="true" signature="2119:2222" ph="{...}" />
             <marker date="1656254229045" expanded="true" signature="2261:2579" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/Player.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+          <folding>
+            <marker date="1656256239926" expanded="false" signature="6:107" ph="..." />
+            <marker date="1656256239926" expanded="true" signature="144:396" ph="{...}" />
+            <marker date="1656256239926" expanded="true" signature="225:394" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -306,21 +347,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/Player.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
-          <folding>
-            <marker date="1656256239926" expanded="false" signature="6:107" ph="..." />
-            <marker date="1656256239926" expanded="true" signature="144:396" ph="{...}" />
-            <marker date="1656256239926" expanded="true" signature="225:394" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/_Scripts/EventHandler.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
+        <state relative-caret-position="1360">
           <caret line="185" column="56" selection-start-line="185" selection-start-column="56" selection-end-line="185" selection-end-column="56" />
           <folding>
             <marker date="1656257071146" expanded="true" signature="6:162" ph="..." />
@@ -357,6 +386,37 @@
             <marker date="1656257071146" expanded="true" signature="6316:6377" ph="{...}" />
             <marker date="1656257071146" expanded="true" signature="6413:6483" ph="{...}" />
             <marker date="1656257071146" expanded="true" signature="6506:6549" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/Ad_Handler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ads@4.1.0/Runtime/Advertisement/Platform/Editor/EditorPlatform.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="872">
+          <caret line="149" selection-start-line="149" selection-end-line="149" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/Ads/InterstitialAd.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+          <folding>
+            <marker date="1656440996110" expanded="true" signature="6:52" ph="..." />
+            <marker date="1656440996110" expanded="true" signature="144:2114" ph="{...}" />
+            <marker date="1656440996110" expanded="true" signature="321:523" ph="{...}" />
+            <marker date="1656440996110" expanded="true" signature="586:819" ph="{...}" />
+            <marker date="1656440996110" expanded="true" signature="893:1084" ph="{...}" />
+            <marker date="1656440996110" expanded="true" signature="1207:1297" ph="{...}" />
+            <marker date="1656440996110" expanded="true" signature="1396:1596" ph="{...}" />
+            <marker date="1656440996110" expanded="true" signature="1694:1887" ph="{...}" />
           </folding>
         </state>
       </provider>
