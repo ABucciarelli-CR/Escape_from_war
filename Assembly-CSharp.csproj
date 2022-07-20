@@ -43,10 +43,10 @@
   <ItemGroup>
     <Compile Include="Assets\_Scripts\CamMove.cs" />
     <Compile Include="Assets\_Scripts\EventHandler.cs" />
-    <Compile Include="Assets\_Scripts\Player.cs" />
-    <Compile Include="Assets\_Scripts\GameFlow.cs" />
     <Compile Include="Assets\_Scripts\Ads\AdsInitializer.cs" />
     <Compile Include="Assets\_Scripts\Ads\InterstitialAd.cs" />
+    <Compile Include="Assets\_Scripts\Player.cs" />
+    <Compile Include="Assets\_Scripts\GameFlow.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\Resources\BillingMode.json" />
@@ -307,14 +307,20 @@
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>F:\Dati\UnityHub\Versions\2022.1.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-      <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-    </Reference>
     <Reference Include="ReportGeneratorMerged">
       <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\PackageCache\com.unity.testtools.codecoverage@1.1.1\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+      <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>F:\Dati\UnityHub\Versions\2022.1.5f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>F:\Dati\UnityHub\Versions\2022.1.5f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Android.Types">
       <HintPath>F:\Dati\UnityHub\Versions\2022.1.5f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
@@ -691,8 +697,14 @@
     <Reference Include="Unity.VisualScripting.Flow.Editor">
       <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Purchasing.Common">
+      <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\Purchasing.Common.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing">
+      <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\UnityEngine.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
@@ -700,11 +712,11 @@
     <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
       <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
-      <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
       <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
+      <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
       <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
@@ -715,11 +727,17 @@
     <Reference Include="Unity.TextMeshPro">
       <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Purchasing.SecurityStub">
+      <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\UnityEngine.Purchasing.SecurityStub.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.State.Editor">
       <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
       <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\UnityEngine.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AddOns.Editor">
       <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll</HintPath>
@@ -745,11 +763,11 @@
     <Reference Include="Unity.VisualScripting.Flow">
       <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Advertisement.IosSupport.Editor">
+      <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\Unity.Advertisement.IosSupport.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Services.Core">
-      <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core">
       <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
@@ -757,8 +775,17 @@
     <Reference Include="Unity.EditorCoroutines.Editor">
       <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Services.Core">
+      <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Services.Core.Analytics">
       <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.SecurityCore">
+      <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\UnityEngine.Purchasing.SecurityCore.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.Codeless">
+      <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\UnityEngine.Purchasing.Codeless.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
       <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
@@ -772,44 +799,23 @@
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.TestTools.CodeCoverage.Editor">
-      <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.State">
-      <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-      <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\UnityEngine.Advertisements.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Advertisements.Editor">
-      <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\UnityEngine.Advertisements.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Purchasing.Common">
-      <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\Purchasing.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Purchasing">
-      <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\UnityEngine.Purchasing.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Purchasing.SecurityStub">
-      <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\UnityEngine.Purchasing.SecurityStub.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Purchasing.SecurityCore">
-      <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\UnityEngine.Purchasing.SecurityCore.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.Purchasing.Stores">
       <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\UnityEngine.Purchasing.Stores.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Purchasing.Codeless">
-      <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\UnityEngine.Purchasing.Codeless.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Purchasing">
       <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\UnityEditor.Purchasing.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Advertisement.IosSupport.Editor">
-      <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\Unity.Advertisement.IosSupport.Editor.dll</HintPath>
+    <Reference Include="Unity.TestTools.CodeCoverage.Editor">
+      <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements.Editor">
+      <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\UnityEngine.Advertisements.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Advertisement.IosSupport">
       <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\Unity.Advertisement.IosSupport.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.State">
+      <HintPath>F:\Dati\UnityHub\Projects\Runner\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions">
       <HintPath>F:\Dati\UnityHub\Versions\2022.1.5f1\Editor\Data\PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

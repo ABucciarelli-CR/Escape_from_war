@@ -332,6 +332,8 @@
 -r:"F:/Dati/UnityHub/Versions/2022.1.5f1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll"
 -r:"F:/Dati/UnityHub/Versions/2022.1.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/Unity.Android.Gradle.dll"
 -r:"F:/Dati/UnityHub/Versions/2022.1.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/Unity.Android.Types.dll"
+-r:"F:/Dati/UnityHub/Versions/2022.1.5f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll"
+-r:"F:/Dati/UnityHub/Versions/2022.1.5f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Purchasing.Common.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Unity.Advertisement.IosSupport.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Unity.Advertisement.IosSupport.ref.dll"

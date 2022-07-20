@@ -10,8 +10,11 @@ public class GameFlow : MonoBehaviour
     public Transform rightTileObj;
     public Transform endLevelTileSpawn;
     public GameObject mainCamera;
-    public Transform[] obstacles;    // 0 = Hit    1 = Dodge    2 = Duck    3 = Jump
+    public Transform[] obstacles;         // 0 = Hit    1 = Dodge    2 = Duck    3 = Jump
+    public Transform[] thiccObstacles;    // 0 = Hit    1 = Dodge    2 = Duck    3 = Jump
     public int tilesForLevel = 0;
+    public int obstacleSpawnPercentage = 60;
+    public int ThiccObstacleSpawnPercentage = 30;
     public float velocityMultiplier = 0.3f;
     public float[] obstacleSpawnRange;
 
@@ -29,7 +32,7 @@ public class GameFlow : MonoBehaviour
         }
         
         StartCoroutine(SpawnTile());
-        StartCoroutine(SpawnObstacle());
+        //StartCoroutine(SpawnObstacle());
     }
     
     void Update()
@@ -44,21 +47,25 @@ public class GameFlow : MonoBehaviour
         {
             case 0:
                 Instantiate(forwardTileObj, nextTileSpawn, forwardTileObj.rotation);
+                SpawnObstacle(-1);
                 break;
             
             case 1:
                 //nextTileSpawn.x -= 3;
                 Instantiate(leftTileObj, nextTileSpawn, leftTileObj.rotation);
+                SpawnObstacle(0);
                 break;
             
             case 2:
                 //nextTileSpawn.x += 3;
                 Instantiate(rightTileObj, nextTileSpawn, rightTileObj.rotation); 
+                SpawnObstacle(1);
                 break;
             default:
                 Debug.Log("Perchè sò qua? Coddio!");
                 break;
         }
+        
         //Instantiate(tileObj, nextTileSpawn, tileObj.rotation);
         nextTileSpawn.z += 3;
         tilesForLevel--;
@@ -72,10 +79,79 @@ public class GameFlow : MonoBehaviour
         }
     }
 
+    private void SpawnObstacle(int line)
+    {
+        //line -1 = linea di Sx    0 = linea centrale    1 = linea di Dx
+        if (Percentage(obstacleSpawnPercentage))
+        {
+            switch (line)
+            {
+                case -1:
+                    if (Percentage(ThiccObstacleSpawnPercentage))
+                    {
+                        Instantiate(thiccObstacles[Random.Range(0, obstacles.Length)], new Vector3(-0.5f, nextTileSpawn.y + 1, nextTileSpawn.z), forwardTileObj.rotation);
+                    }
+                    else
+                    {
+                        Instantiate(obstacles[Random.Range(0, obstacles.Length)], new Vector3(-1, nextTileSpawn.y + 1, nextTileSpawn.z), forwardTileObj.rotation);
+                    }
+                    break;
+
+                case 0:
+                    if (Percentage(ThiccObstacleSpawnPercentage))
+                    {
+                        if (Random.Range(0,100) <= 50)
+                        {
+                            Instantiate(thiccObstacles[Random.Range(0, obstacles.Length)], new Vector3(-0.5f, nextTileSpawn.y + 1, nextTileSpawn.z), forwardTileObj.rotation);
+                        }
+                        else
+                        {
+                            Instantiate(thiccObstacles[Random.Range(0, obstacles.Length)], new Vector3(0.5f, nextTileSpawn.y + 1, nextTileSpawn.z), forwardTileObj.rotation);
+                        }
+                    }
+                    else
+                    {
+                        Instantiate(obstacles[Random.Range(0, obstacles.Length)], new Vector3(0, nextTileSpawn.y + 1, nextTileSpawn.z), forwardTileObj.rotation);
+                    }
+                    break;
+
+                case 1:
+                    if (Percentage(ThiccObstacleSpawnPercentage))
+                    {
+                        Instantiate(thiccObstacles[Random.Range(0, obstacles.Length)], new Vector3(0.5f, nextTileSpawn.y + 1, nextTileSpawn.z), forwardTileObj.rotation);
+                    }
+                    else
+                    {
+                        Instantiate(obstacles[Random.Range(0, obstacles.Length)], new Vector3(1, nextTileSpawn.y + 1, nextTileSpawn.z), forwardTileObj.rotation);
+                    }
+                    break;
+                default:
+                    Debug.Log("Perchè sò qua negli ostacoli? Coddio!");
+                    break;
+            }
+        }
+    }
+
+    private bool Percentage(int x)
+    {
+        bool result;
+        if (Random.Range(0, 100) <= x)
+        {
+            result = true;
+        }
+        else
+        {
+            result = false;
+        }
+        
+        return result;
+    }
+    
+    /*
     IEnumerator SpawnObstacle()
     {
         yield return new  WaitForSeconds(Random.Range(obstacleSpawnRange[0], obstacleSpawnRange[1]));
         Instantiate(obstacles[Random.Range(0,obstacles.Length)], new Vector3(Random.Range(-1, 2), nextTileSpawn.y + 1, nextTileSpawn.z), forwardTileObj.rotation);
         StartCoroutine(SpawnObstacle());
-    }
+    }*/
 }
