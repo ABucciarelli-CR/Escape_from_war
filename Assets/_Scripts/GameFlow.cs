@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameFlow : MonoBehaviour
 {
@@ -10,18 +12,23 @@ public class GameFlow : MonoBehaviour
     public Transform rightTileObj;
     public Transform endLevelTileSpawn;
     public GameObject mainCamera;
+    public TMP_Text showDistanceCovered;
     public Transform[] obstacles;         // 0 = Hit    1 = Dodge    2 = Duck    3 = Jump
     public Transform[] thiccObstacles;    // 0 = Hit    1 = Dodge    2 = Duck    3 = Jump
     public int tilesForLevel = 0;
     public int obstacleSpawnPercentage = 60;
-    public int ThiccObstacleSpawnPercentage = 30;
+    public int thiccObstacleSpawnPercentage = 30;
     public float velocityMultiplier = 0.3f;
-    public float[] obstacleSpawnRange;
+    //public float[] obstacleSpawnRange;
 
     private Vector3 nextTileSpawn;
+    private float distanceCovered;
+    private Vector3 startingPoint;
     
     void Start()
     {
+        startingPoint = mainCamera.transform.position;
+        
         forwardTileObj.position = new Vector3(forwardTileObj.position.x,0.25f, forwardTileObj.position.z);
         //Debug.Log(mainCamera.GetComponent<CamMove>().gameVelocity * velocityMultiplier);
         for(int i=0; i<5; i++)
@@ -37,6 +44,8 @@ public class GameFlow : MonoBehaviour
     
     void Update()
     {
+        distanceCovered = Mathf.Round(mainCamera.transform.position.z - startingPoint.z);
+        showDistanceCovered.text = distanceCovered.ToString() + " m";
     }
 
     IEnumerator SpawnTile()
@@ -87,7 +96,7 @@ public class GameFlow : MonoBehaviour
             switch (line)
             {
                 case -1:
-                    if (Percentage(ThiccObstacleSpawnPercentage))
+                    if (Percentage(thiccObstacleSpawnPercentage))
                     {
                         Instantiate(thiccObstacles[Random.Range(0, obstacles.Length)], new Vector3(-0.5f, nextTileSpawn.y + 1, nextTileSpawn.z), forwardTileObj.rotation);
                     }
@@ -98,7 +107,7 @@ public class GameFlow : MonoBehaviour
                     break;
 
                 case 0:
-                    if (Percentage(ThiccObstacleSpawnPercentage))
+                    if (Percentage(thiccObstacleSpawnPercentage))
                     {
                         if (Random.Range(0,100) <= 50)
                         {
@@ -116,7 +125,7 @@ public class GameFlow : MonoBehaviour
                     break;
 
                 case 1:
-                    if (Percentage(ThiccObstacleSpawnPercentage))
+                    if (Percentage(thiccObstacleSpawnPercentage))
                     {
                         Instantiate(thiccObstacles[Random.Range(0, obstacles.Length)], new Vector3(0.5f, nextTileSpawn.y + 1, nextTileSpawn.z), forwardTileObj.rotation);
                     }
